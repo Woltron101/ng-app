@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>catalog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+    <script src="ctrl/catalogCtrl.js"></script>
+</head>
+
+<body>
+    <div class="container" ng-controller='catalogCtrl'>
+        <div class="col-md-4 col-sm-6 text-center" ng-repeat="item in catalog" id="{{item.id}}">
+            <img src="img/{{$index+1}}.jpg" alt="{{item.name}}">
+            <h3>{{item.name}}</h3>
+            <p>{{item.price | currency}}</p>
+        </div>
+    </div>
+</body>
+
+</html>
