@@ -1,31 +1,31 @@
 [{
     "login": "login1",
-    "user": "user1"
+    "password": "password1"
 }, {
     "login": "login2",
-    "user": "user2"
+    "password": "password2"
 }, {
     "login": "login3",
-    "user": "user3"
+    "password": "password3"
 }, {
     "login": "login4",
-    "user": "user4"
+    "password": "password4"
 }, {
     "login": "login5",
-    "user": "user5"
+    "password": "password5"
 }, {
     "login": "login6",
-    "user": "user6"
+    "password": "password6"
 }, {
     "login": "login7",
-    "user": "user7"
+    "password": "password7"
 }, {
     "login": "login8",
-    "user": "user8"
+    "password": "password8"
 }, {
     "login": "login9",
-    "user": "user9"
+    "password": "password9"
 }, {
     "login": "login10",
-    "user": "user10"
+    "password": "password10"
 }]

@@ -1,37 +1,6 @@
 [{
     "id": "id1",
     "name": "phone1",
-    "price": 1.99
-}, {
-    "id": "id2",
-    "name": "phone2",
-    "price": 2.99
-}, {
-    "id": "id3",
-    "name": "phone3",
-    "price": 3.99
-}, {
-    "id": "id4",
-    "name": "phone4",
-    "price": 4.99
-}, {
-    "id": "id5",
-    "name": "phone5",
-    "price": 5.99
-}, {
-    "id": "id6",
-    "name": "phone6",
-    "price": 6.99
-}, {
-    "id": "id7",
-    "name": "phone7",
-    "price": 7.99
-}, {
-    "id": "id8",
-    "name": "phone8",
-    "price": 8.99
-}, {
-    "id": "id9",
-    "name": "phone9",
-    "price": 9.99
+    "price": 1.99,
+    "img": "1"
 }]
