@@ -7,7 +7,7 @@ app.controller('loginCtrl', function($scope, $http) {
     $scope.logIn = function() {
         for (var i = users.length - 1; i >= 0; i--) {
             if ($scope.login == users[i].login && $scope.password == users[i].password) {
-                alert('enter');
+                window.location.hash = "#/catalog";
                 return false;
             }
 

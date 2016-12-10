@@ -1,4 +1,4 @@
-var app = angular.module('app', []);
+var app = angular.module('app', ['ui.router']);
 app.controller('catalogCtrl', function($scope, $http) {
     $http.get('json/catalog.json').success(function(response) {
         $scope.catalog = response;
@@ -8,7 +8,7 @@ app.controller('catalogCtrl', function($scope, $http) {
         id: 'id1',
         name: 'phone1',
         price: 1.99,
-        img: '1',
+        img: 1,
         active: false
     };
 
@@ -31,4 +31,18 @@ app.controller('catalogCtrl', function($scope, $http) {
             $scope.popup.active = false;
         }
     }
+})
+app.config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider.state('catalog', {
+        url: '/catalog',
+        templateUrl: 'tamplates/catalog.html',
+        conteroller: 'catalogCtrl'
+
+    })
+    $stateProvider.state('login', {
+        url: '/login',
+        templateUrl: 'tamplates/login.html',
+        controller: 'loginCtrl'
+    })
+
 })

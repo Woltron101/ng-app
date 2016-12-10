@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="app">
+<div ng-controller='catalogCtrl'>
 
-<head>
-    <meta charset="UTF-8">
-    <title>catalog</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
-    <script src="ctrl/catalogCtrl.js"></script>
-</head>
-
-<body ng-controller='catalogCtrl'>
-    {{catalog[0]}}
     <div class="container">
         <div class="col-md-4 col-sm-6 text-center" ng-repeat="item in catalog track by $index" id="{{item.id}}" ng-click="showPopup()" ng-cloak>
             <img ng-src="img/{{item.img}}.jpg" alt="{{item.name}}">
@@ -29,6 +17,4 @@
         </div>
     </div>
 
-</body>
-
-</html>
+</div>
