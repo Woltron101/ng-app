@@ -1,16 +1,23 @@
 <div ng-controller='catalogCtrl'>
 
     <div class="container">
-        <div class="col-md-4 col-sm-6 text-center" ng-repeat="item in catalog track by $index" id="{{item.id}}" ng-click="showPopup()" ng-cloak>
-            <img ng-src="img/{{item.img}}.jpg" alt="{{item.name}}">
-            <h3>{{item.name}}</h3>
-            <p>{{item.price | currency}}</p>
+        <div class="row text-right logout">
+            {{user}}
+            <div class="btn btn-primary" ng-click="logOut()">LogOut</div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 text-center" ng-repeat="item in catalog track by $index" id="{{item.id}}" ng-click="showPopup()" ng-cloak>
+                <img ng-src="img/{{item.img}}.jpg" alt="{{item.name}}">
+                <h3>{{item.name}}</h3>
+                <p>{{item.price | currency}}</p>
+            </div>
         </div>
     </div>
 
     <div class="popup-wrap" ng-show="popup.active" ng-click="hidePopup($event)">
         <div class="popup text-center">
-            <div class="close">x</div>
+            <div class="close">×</div>
             <img ng-src="img/{{popup.img}}.jpg" alt="{{popup.name}}">
             <h3>{{popup.name}}</h3>
             <h3>{{popup.price | currency}}</h3>

@@ -7,12 +7,17 @@
 }
 
 h3,
-.authorization input[type="text"] {
+.authorization input[type="text"],
+.authorization input[type="password"] {
     margin-bottom: 30px;
 }
 
-.authorization input[type="submit"] {
+.authorization input[type="button"] {
     width: 100%;
+}
+
+.logout {
+    padding-top: 20px;
 }
 
 img {
@@ -27,21 +32,23 @@ img {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.9);
-    /*display: none;*/
 }
 
 .popup {
     position: absolute;
-    min-width: 600px;
-    height: 400px;
+    height: 420px;
     background-color: #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin: 30px;
+    padding: 30px;
 }
 
-
-/*.popup-wrap.active {
-    display: block;
+.close {
+    padding: 5px;
+    margin-right: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
-*/
